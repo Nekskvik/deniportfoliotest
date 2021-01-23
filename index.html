@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="swiper-bundle.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+</head>
+<body>
+
+	<a href="#" class="scrolltop">
+		<i class="fas fa-angle-up scrolltop__icon" id="scroll-top"></i>
+	</a>
+
+	<header class="l-header" id="header">
+		<nav class="nav bd-container">
+			<a href="#" class="nav__logo">Дени Доу</a>
+
+			<div class="nav__menu" id="nav-menu">
+				<ul class="nav__list">
+					<li class="nav__item nav-item"><a href="#home" class="nav__link active-link">Главная</a></li>
+					<li class="nav__item nav-item"><a href="#about" class="nav__link">Обо мне</a></li>
+					<li class="nav__item nav-item"><a href="#services" class="nav__link">Сервисы</a></li>
+					<li class="nav__item nav-item"><a href="#portfolio" class="nav__link">Портфолио</a></li>
+					<li class="nav__item nav-item"><a href="#contact" class="nav__link">Контакты</a></li>
+				</ul>
+			</div>
+
+			<div class="nav__toggle" id="nav-toggle">
+				<i class="fas fa-bars"></i>
+			</div>
+		</nav>
+	</header>
+
+	<main id="main__wrapper">
+		<section class="home" id="home">
+
+			<video src="images/Scripts_Being_Typed.mp4" muted loop autoplay></video>
+			<div class="overlay"></div>
+
+			<div class="home__container bd-container">
+				<div class="home-content">
+					<div class="text-1">Привет, меня зовут</div>
+					<div class="text-2">Дени Доу</div>
+					<div class="text-3">и Я <span class="typing"></span></div>
+					<div class="home__social">
+						<a href="#" class="home__social-icon"><i class="fab fa-instagram"></i></a>
+						<a href="https://www.facebook.com/profile.php?id=100056060052588" target="_blank" class="home__social-icon"><i class="fab fa-facebook-f"></i></a>
+						<a href="https://twitter.com/nexkvik" target="_blank" class="home__social-icon"><i class="fab fa-twitter"></i></a>
+						<a href="https://github.com/Nekskvik" target="_blank" class="home__social-icon"><i class="fab fa-github"></i></a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="bd-container about__section" id="about">
+			<h2 class="section-title">Обо мне</h2>
+			<div class="about-container">
+				<div class="about-image"><img src="images/manmodelfour.jpg" alt="This is me"></div>
+				<div class="about-info">
+					<h3>Кратко обо мне</h3>
+					<p>Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Earum repellendus reiciendis ea, saepe quibusdam repellat, sapiente consectetur sed iure!Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Earum repellendus reiciendis ea, saepe quibusdam repellat, sapiente consectetur sed iure!Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Earum repellendus reiciendis ea, saepe quibusdam repellat, sapiente consectetur sed iure!Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Earum repellendus </p>
+					<a href="#">Скачать резюме</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="bd-container services" id="services">
+			<h2 class="section-title">Мои услуги</h2>
+
+			<div class="services__container">
+				<div class="services__data">
+					<i class="far fa-object-group services__icon"></i>
+					<h3 class="services__title">UI/UX Design</h3>
+					<p class="services__description">Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Earum repellendus reiciendis ea, saepe quibusdam repellat, sapiente consectetur sed iure!</p>
+					<a href="#" class="button">Узнать больше</a>
+				</div>
+
+				<div class="services__data">
+					<i class="far fa-file-code services__icon"></i>
+					<h3 class="services__title">Веб Разработка</h3>
+					<p class="services__description">Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Earum repellendus reiciendis ea, saepe quibusdam repellat, sapiente consectetur sed iure!</p>
+					<a href="#" class="button">Узнать больше</a>
+				</div>
+
+				<div class="services__data">
+					<i class="fas fa-camera-retro services__icon"></i>
+					<h3 class="services__title">Фотосессии</h3>
+					<p class="services__description">Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Earum repellendus reiciendis ea, saepe quibusdam repellat, sapiente consectetur sed iure!</p>
+					<a href="#" class="button">Узнать больше</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="project section bd-container">
+			<div class="project__container">
+				<div class="project__data">
+					<i class="far fa-address-card project__icon"></i>
+					<div>
+						<h2 class="project__title">У вас родилась идея для проекта ?</h2>
+						<p class="project__description">Напиши мне свою идею, и я воплощу её в реальность</p>
+						<a href="#" class="button project-btn">Напиши мне</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="portfolio section bd-container" id="portfolio">
+			<h2 class="section-title">Мои проекты</h2>
+
+			<div class="portfolio__nav">
+				<span class="portfolio__item" data-filter="all">Все проекты</span>
+				<span class="portfolio__item" data-filter=".ux">UI/UX</span>
+				<span class="portfolio__item" data-filter=".web">Разработка</span>
+				<span class="portfolio__item" data-filter=".photo">Фотосессии</span>
+			</div>
+
+			<div class="portfolio__container">
+				<div class="portfolio__content mix web">
+					<a href="#"><img src="images/webdesignseo.jpg" class="portfolio__img"></a>
+					<div class="portfolio__data">
+						<span class="portfolio__subtitle">Веб Разработка</span>
+						<a href="#"><h2 class="portfolio__title">Новая работа для клиента сделана на "Ура".</h2></a>
+						<a href="#" class="button">О работе</a>
+					</div>
+				</div>
+				<div class="portfolio__content mix web">
+					<a href="#"><img src="images/webdesignseo.jpg" class="portfolio__img"></a>
+					<div class="portfolio__data">
+						<span class="portfolio__subtitle">Веб Разработка</span>
+						<a href="#"><h2 class="portfolio__title">Новая работа для клиента сделана на "Ура".</h2></a>
+						<a href="#" class="button">О работе</a>
+					</div>
+				</div>
+				<div class="portfolio__content mix ux">
+					<a href="#"><img src="images/kiemtraseo.png" class="portfolio__img"></a>
+					<div class="portfolio__data">
+						<span class="portfolio__subtitle">UI/UX Дизайн</span>
+						<a href="#"><h2 class="portfolio__title">Новый дизайн для сайта от google.</h2></a>
+						<a href="#" class="button">О работе</a>
+					</div>
+				</div>
+				<div class="portfolio__content mix photo">
+					<a href="#"><img src="images/kidsmodelone.jpg" class="portfolio__img"></a>
+					<div class="portfolio__data">
+						<span class="portfolio__subtitle">Фотосессия</span>
+						<a href="#"><h2 class="portfolio__title">Лучшая фотосессия 2021?</h2></a>
+						<a href="#" class="button">О работе</a>
+					</div>
+				</div>
+			</div>
+				
+		</section>
+
+		<section class="testimonial section bd-container">
+			<h2 class="section-title">Они говорят обо мне</h2>
+
+			<div class="testimonial__container swiper-container">
+				<div class="swiper-wrapper">
+					<div class="testimonial__content swiper-slide">
+						<img src="images/manmodelthree.jpg" alt="client's img" class="testimonial__img">
+						<h3 class="testimonial__title">Майк Вазовски</h3>
+						<span class="testimonial__client">Клиент</span>
+						<p class="testimonial__description">Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Error dolorem cum praesentium provident similique numquam voluptate illum natus perspiciatis sapiente?</p>
+					</div>
+					<div class="testimonial__content swiper-slide">
+						<img src="images/manmodelthree.jpg" alt="client's img" class="testimonial__img">
+						<h3 class="testimonial__title">Дерик Добрек</h3>
+						<span class="testimonial__client">Клиент</span>
+						<p class="testimonial__description">Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Error dolorem cum praesentium provident similique numquam voluptate illum natus perspiciatis sapiente?</p>
+					</div>
+					<div class="testimonial__content swiper-slide">
+						<img src="images/manmodelthree.jpg" alt="client's img" class="testimonial__img">
+						<h3 class="testimonial__title">Джим Кимел</h3>
+						<span class="testimonial__client">Клиент</span>
+						<p class="testimonial__description">Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Error dolorem cum praesentium provident similique numquam voluptate illum natus perspiciatis sapiente?</p>
+					</div>
+					<div class="testimonial__content swiper-slide">
+						<img src="images/manmodelthree.jpg" alt="client's img" class="testimonial__img">
+						<h3 class="testimonial__title">Александр Зубра</h3>
+						<span class="testimonial__client">Клиент</span>
+						<p class="testimonial__description">Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Error dolorem cum praesentium provident similique numquam voluptate illum natus perspiciatis sapiente?</p>
+					</div>
+					<div class="testimonial__content swiper-slide">
+						<img src="images/manmodelthree.jpg" alt="client's img" class="testimonial__img">
+						<h3 class="testimonial__title">Даниэл Рей</h3>
+						<span class="testimonial__client">Клиент</span>
+						<p class="testimonial__description">Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Error dolorem cum praesentium provident similique numquam voluptate illum natus perspiciatis sapiente?</p>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</section>
+
+		<section class="contact section bd-container" id="contact">
+			<h2 class="section-title">Контактная информация</h2>
+
+			<div class="contact-items">
+				<div class="contact-item">
+					<div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png"/></div>
+					<div class="contact-info">
+						<h1>Телефон</h1>
+						<h2>+71111111111</h2>
+						<h2>+72222222222</h2>
+					</div>
+				</div>
+				<div class="contact-item">
+					<div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png"/></div>
+					<div class="contact-info">
+						<h1>Email</h1>
+						<h2>info@gmail.com</h2>
+						<h2>mail@gmail.com</h2>
+					</div>
+				</div>
+				<div class="contact-item">
+					<div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png"/></div>
+					<div class="contact-info">
+						<h1>Адрес</h1>
+						<h2>Где-то на планете Земля.</h2>
+					</div>
+				</div>
+			</div>			
+		</section>
+
+		<div id="footer">
+		    <div class="footer-container">
+		      	<div class="brand"><h1>Дени Доу</h1></div>
+		      	<h2>Спасибо, что посетили мой сайт-портфолио</h2>
+			    <div class="social-icon">
+			        <div class="social-item">
+			          	<a href="https://www.facebook.com/profile.php?id=100056060052588" target="_blank"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png"/></a>
+			        </div>
+			        <div class="social-item">
+			          	<a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"/></a>
+			        </div>
+			        <div class="social-item">
+			          	<a href="https://twitter.com/nexkvik" target="_blank"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png"/></a>
+			        </div>
+			        <div class="social-item">
+			          	<a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png"/></a>
+			        </div>
+			    </div>
+			    <p>Copyright © 2021. Все права защищены. Создано by <a href="https://vk.com/wbdevox" target="_blank" style="display: inline-block; font-size: 17px; color: crimson;">Nexkvik</a></p>
+		    </div>
+		</div>
+	</main>
+
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js" integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg==" crossorigin="anonymous"></script>
+	<script src="mixitup.min.js"></script>
+	<script src="swiper-bundle.min.js"></script>
+
+
+
+	<script type="text/javascript">
+		//OPEN UP MENU
+		const showMenu = (toggleId, navId) =>{
+			const toggle = document.getElementById(toggleId),
+				  nav = document.getElementById(navId)
+
+			if(toggle && nav){
+				toggle.addEventListener('click', () => {
+					nav.classList.toggle('show-menu')
+				})
+			}
+		}
+		showMenu('nav-toggle', 'nav-menu')
+
+		//CLOSE UP MENU
+		const navLink = document.querySelectorAll('.nav__link')
+		function linkAction(){
+			const navMenu = document.getElementById('nav-menu')
+			navMenu.classList.remove('show-menu')
+		}
+		navLink.forEach(i => i.addEventListener('click', linkAction))
+
+		//SCROLL TO SECTION
+		const sections = document.querySelectorAll('section[id]')
+		function scrollActive() {
+			const scrollY = window.pageYOffset
+			sections.forEach(current =>{
+				const sectionHeight = current.offsetHeight
+				const sectionTop = current.offsetTop - 50
+				sectionId = current.getAttribute('id')
+				if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+					document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+				}else{
+					document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+				}
+			})
+		}
+		window.addEventListener('scroll', scrollActive)
+
+		//CHANGE BG HEADER ON SCROLL
+		function scrollHeader(){
+			const header = document.getElementById('header')
+			if(this.scrollY >= 10) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
+		}
+		window.addEventListener('scroll', scrollHeader)
+
+		//SHOW TOTOP BTN ON SCROLL
+		function scrollTop(){
+			const scrollTop = document.getElementById('scroll-top')
+			if(this.scrollY >= 2) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
+		}
+		window.addEventListener('scroll', scrollTop)
+
+		//TYPING TEXT
+		let typed = new Typed(".typing", {
+			strings: ["Freelancer", "Web Developer", "UI/UX Designer", "Photographer"],
+			typeSpeed:100,
+			backSpeed:60,
+			loop:true
+		})
+
+		//MIXITUP FILTER
+		const mixer = mixitup('.portfolio__container', {
+		    selectors: {
+		        target: '.portfolio__content'
+		    },
+		    animation: {
+		        duration: 400
+		    }
+		});
+
+		// SWIPER
+		const mySwiper = new Swiper('.testimonial__container', {
+
+	      spaceBetween: 16,
+		  loop: true,
+		  grabCursor: true,
+
+		  pagination: {
+		    el: '.swiper-pagination',
+		    clickable: true
+		  },
+		  breakpoints:{
+		  	640:{
+		  		slidesPerView: 2,
+		  	},
+		  	1024:{
+		  		slidesPerView: 3,
+		  	},
+		  }
+		})
+
+	</script>
+</body>
+</html>
